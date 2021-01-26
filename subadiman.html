@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Attendence Employee</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <script src="subadiman.js"></script>
+    <style>
+        body {
+            background-color: rgb(174, 240, 240);
+        }
+        
+        .main {
+            width: 50%;
+            border: 2px solid #999;
+            margin: 4em auto;
+            background-color: azure;
+            border-radius: 2ch;
+        }
+        
+        h3 {
+            text-align: center;
+            color: rgb(94, 90, 90);
+            margin: 2em;
+            font-weight: 500;
+            font-style: oblique;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>Attendence Employee</h3>
+        <div class="main">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6  col-xl-6">
+                    <form class="form-container col-6 col-sm-12 col-xl-12">
+                        <div class="input-group ">
+
+                            <input type="text" name="email" placeholder="Email" class="form-control w-auto  d-inline  m-3" id="emailName">
+                        </div>
+
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary mt-3 mb-3 text-center" data-toggle="modal" data-target="#modalone" onclick="attendence()">check</button>
+                            <div class="modal" id="modalone">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="input-group">
+                                                <p class="font-weight-bold"> Employee Name:</p>
+                                                <label id="empname"></label>
+
+                                            </div>
+                                            <div class="input-group">
+                                                <p class="font-weight-bold"> Attendence Time:</p>
+                                                <label id="empTime"></label>
+                                            </div>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
