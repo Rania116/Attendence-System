@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Attendence System</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: rgb(190, 233, 235);
+        }
+        
+        a {
+            margin: 2em;
+            color: cornsilk;
+        }
+        
+        .text-box {
+            font-size: 70px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: seashell;
+        }
+        
+        span {
+            display: inline-block;
+            animation: mover 6s infinite;
+        }
+        
+        @keyframes mover {
+            0% {
+                text-shadow: 10px 10px 10px rgb(84, 153, 185);
+            }
+            50% {
+                text-shadow: 10px 10px 10px rgb(88, 177, 77);
+                transform: translateY(30px);
+            }
+            100% {
+                text-shadow: 10px 10px 10pxrgb(151, 47, 47);
+            }
+        }
+        
+        span:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+        
+        span:nth-child(2) {
+            animation-delay: 1s;
+        }
+        
+        span:nth-child(3) {
+            animation-delay: 1.5s;
+        }
+        
+        span:nth-child(4) {
+            animation-delay: 2s;
+        }
+        
+        span:nth-child(5) {
+            animation-delay: 2.5s;
+        }
+        
+        span:nth-child(6) {
+            animation-delay: 3s;
+        }
+        
+        span:nth-child(7) {
+            animation-delay: 3.5s;
+        }
+        
+        span:nth-child(8) {
+            animation-delay: 4s;
+        }
+        
+        span:nth-child(9) {
+            animation-delay: 4.5s;
+        }
+        
+        span:nth-child(10) {
+            animation-delay: 5s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="nav justify-content-center">
+            <a class="nav-link active" href="login.html">Sign in</a>
+            <a class="nav-link" href="resgister.html">Sign up</a>
+            <a class="nav-link" href="about.html">About </a>
+            <a class="nav-link disabled" href="index.html">Home </a>
+        </nav>
+        <div class="text-box">
+
+            <span>A</span>
+            <span>T</span>
+            <span>T</span>
+            <span>E</span>
+            <span>N</span>
+            <span>D</span>
+            <span>E</span>
+            <span>N</span>
+            <span>C</span>
+            <span>E</span>
+
+        </div>
+
+
+    </div>
+    <!-- library of bootstrap -->
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> About </title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+        $(function() {
+            //increase size
+            $(".inc").on('click', function() {
+                    var currentsize = $("p").css("font-size");
+                    var currentnum = parseFloat(currentsize);
+                    var newSize = currentnum * 1.1;
+                    $('p').css("font-size", newSize)
+                })
+                //decrsce size
+            $(".dec").on('click', function() {
+                    var currentsize = $("p").css("font-size");
+                    var currentnum = parseFloat(currentsize);
+                    var newSize = currentnum * 0.8;
+                    $('p').css("font-size", newSize)
+                })
+                //reset size
+            var currentsize = $("p").css("font-size");
+            $(".reset").on("click", function() {
+                $("p").css("font-size", currentsize)
+            })
+
+
+        })
+    </script>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: skyblue;
+        }
+        
+        p {
+            font-size: medium;
+            line-height: 35px;
+            margin: 2em;
+        }
+        
+        .group {
+            margin: 2em;
+            text-align: center;
+        }
+        
+        a {
+            margin: 2em;
+            color: snow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="nav justify-content-center">
+            <a class="nav-link active" href="login.html">Sign in</a>
+            <a class="nav-link" href="resgister.html">Sign up</a>
+            <a class="nav-link" href="index.html">Home </a>
+            <a class="nav-link disabled" href="about.html">About </a>
+        </nav>
+        <div class="group">
+            <button class="inc btn btn-success"><i class="fa fa-plus"></i></button>
+            <button class="dec btn btn-danger"><i class="fa fa-minus"></i></button>
+            <button class="reset btn btn-info"><i class="fa fa-refresh"></i></button>
+        </div>
+        <p> When attendance management first started gaining momentum amongst organizations, employees’ attendance was tracked using physical registers or excel sheets. As times have advanced, digitization of this process has become the norm. inding efficient
+            ways to track your employees’ attendance will help you understand the data with a lot more clarity.</p>
+        <p>Technology has evolved at lightning-fast speeds in the past decade, and as of 2020, we are looking at software that can make our lives much easier. The same applies to tools that are used to record attendance. The range of attendance management
+            software available today includes on-premise software, as well as cloud-based tools that incorporate advanced analytics along with automated schedule configuration.</p>
+
+    </div>
+    <!-- library of bootstrap -->
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
